@@ -1,0 +1,62 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Form with Two Textboxes</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 20px;  
+            background-color: black;
+            color: white;
+        }  
+        .form-container {  
+            max-width: 300px;  
+            margin: auto;
+        }  
+        .form-container input[type="text"], .form-container select {  
+            width: 100%;  
+            padding: 8px;  
+            margin: 10px 0;  
+            box-sizing: border-box;  
+            background-color: #333;
+            color: white;
+            border: 1px solid #555;
+        }  
+        .form-container input[type="submit"] {  
+            padding: 10px 15px;  
+            background-color: #4CAF50;  
+            color: white;  
+            border: none;  
+            cursor: pointer;  
+        }  
+        .form-container input[type="submit"]:hover {  
+            background-color: #45a049;  
+        }  
+    </style>  
+</head>  
+<body>  
+  
+<div class="form-container">  
+    <form action="#" method="post">  
+        <label for="selectbox">Select an option:</label>
+        <select id="selectbox" name="selectbox" required>
+            <option value="">Please choose...</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+
+        <label for="textbox1">Textbox 1:</label>  
+        <input type="text" id="textbox1" name="textbox1" required>  
+  
+        <label for="textbox2">Textbox 2:</label>  
+        <input type="text" id="textbox2" name="textbox2" required>  
+  
+        <input type="submit" value="Submit">  
+    </form>  
+</div>  
+  
+</body>  
+</html>  
